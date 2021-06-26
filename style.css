@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("pic-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#main .slider{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#main .slider #next,
+#main .slider #prev{
+    width: 40px;
+    cursor: pointer;
+}
+
+#main .slider .preview{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 60px;
+}
+
+#main .slider .preview img{
+    width: 60px;
+    margin: 0 10px;
+    opacity: 0.6;
+    object-fit: cover;
+}
+
+#main .slider .preview .active{
+    display: block;
+    border: 3px solid #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 1;
+}
